@@ -5,7 +5,7 @@ from langchain_community.vectorstores import Chroma
 
 def create_vector_store():
 
-    loader = TextLoader("data//policies.txt")
+    loader = TextLoader("policies.txt")
     documents = loader.load()
 
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
